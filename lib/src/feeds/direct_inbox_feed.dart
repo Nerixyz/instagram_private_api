@@ -18,7 +18,7 @@ class DirectInboxFeed extends InstaFeed<FeedDirectInboxResponse,
         if (cursor != null && seqId != null) ...{
           'cursor': cursor,
           'seq_id': seqId.toString(),
-          'dircetion': 'older'
+          'direction': 'older'
         },
         'thread_message_limit': 10.toString(),
         'persistentBadging': 'true',

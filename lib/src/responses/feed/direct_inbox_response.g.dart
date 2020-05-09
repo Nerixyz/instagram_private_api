@@ -213,7 +213,7 @@ DirectInboxFeedResponseItemsItem _$DirectInboxFeedResponseItemsItemFromJson(
   return DirectInboxFeedResponseItemsItem()
     ..itemId = json['item_id'] as String
     ..userId = json['user_id'] as int
-    ..timestamp = json['timestamp'] as String
+    ..timestamp = (json['timestamp'] as num)?.toDouble()
     ..itemType = json['item_type'] as String
     ..text = json['text'] as String
     ..link = json['link'] == null
@@ -286,7 +286,7 @@ DirectInboxFeedResponseLastPermanentItem
   return DirectInboxFeedResponseLastPermanentItem()
     ..itemId = json['item_id'] as String
     ..userId = json['user_id'] as int
-    ..timestamp = json['timestamp'] as String
+    ..timestamp = (json['timestamp'] as num)?.toDouble()
     ..itemType = json['item_type'] as String
     ..text = json['text'] as String
     ..link = json['link'] == null
