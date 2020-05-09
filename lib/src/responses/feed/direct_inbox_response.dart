@@ -127,7 +127,7 @@ class DirectInboxFeedResponseUsersItem {
 class DirectInboxFeedResponseItemsItem {
   String itemId;
   int userId;
-  String timestamp;
+  double timestamp;
   String itemType;
   String text;
   DirectInboxFeedResponseLink link;
@@ -171,7 +171,7 @@ class DirectInboxFeedResponseInviter {
 class DirectInboxFeedResponseLastPermanentItem {
   String itemId;
   int userId;
-  String timestamp;
+  double timestamp;
   String itemType;
   String text;
   DirectInboxFeedResponseLink link;
